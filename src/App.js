@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./assets/css/templatemo-sixteen.css";
+import "./assets/css/fontawesome.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.min.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Homepage from "./Pages/Homepage";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Shop from "./Pages/Shop";
+import Footer from "./Components/footer";
+import SingleProduct from "./Pages/SingleProduct";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Homepage}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/contact" component={Contact}></Route>
+        <Route exact path="/shop" component={Shop}></Route>
+        <Route exact path="/shop/single" component={SingleProduct}></Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
