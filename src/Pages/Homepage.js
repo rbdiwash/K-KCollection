@@ -127,39 +127,6 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* <div className="latest-products">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <img src={image4} alt="" className="img-fluid" height="100%" />
-            </div>
-            <div className="col-lg-6">
-              <div className="row flex-wrap">
-                <div className="col-lg-12">
-                  <img src={image1} alt="" className="img-fluid" />
-                </div>
-                <div className="col-lg-6">
-                  <img
-                    src={image2}
-                    alt=""
-                    className="img-fluid"
-                    height="100%"
-                  />
-                </div>
-                <div className="col-lg-6">
-                  <img
-                    src={image3}
-                    alt=""
-                    className="img-fluid"
-                    height="100%"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-       */}
       <div className="latest-products">
         <div className="container">
           <div className="row">
