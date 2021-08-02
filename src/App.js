@@ -1,7 +1,6 @@
 import "./assets/css/templatemo-sixteen.css";
 import "./assets/css/fontawesome.css";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.min.css";
+
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
