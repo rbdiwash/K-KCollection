@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import "../assets/css/templatemo-sixteen.css";
+import { Link } from "react-router-dom";
+import "../assets/css/style.css";
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
         <div class="container">
           <Link class="navbar-brand" to="/">
             <h2>
-              <em>K & K</em> Collection
+              <em>K & K</em> Collection Edited
             </h2>
           </Link>
           <button

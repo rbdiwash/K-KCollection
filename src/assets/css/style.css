@@ -100,11 +100,11 @@ a.filled-button:hover {
 }
 
 .about-heading {
-  background-image: url(../images/about-heading.jpg);
+  background-image: url(../images/products-heading.jpg);
 }
 
 .contact-heading {
-  background-image: url(../images/contact-heading.jpg);
+  background-image: url(../images/products-heading.jpg);
 }
 
 .page-heading {
@@ -339,7 +339,7 @@ header .navbar {
 
 .banner-item-03 {
   padding: 300px 0px;
-  background-image: url(https://preview.colorlib.com/theme/selling/images/xhero_2.jpg.pagespeed.ic.CMlBvkznrC.webp);
+  background-image: url(../images/Products/p8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -818,7 +818,7 @@ footer .inner-content p a {
 /* Services */
 
 .services {
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/products-heading.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

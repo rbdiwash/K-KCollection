@@ -1,4 +1,4 @@
-import "./assets/css/templatemo-sixteen.css";
+import "./assets/css/style.css";
 import "./assets/css/fontawesome.css";
 
 import React from "react";
