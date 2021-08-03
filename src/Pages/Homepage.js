@@ -5,7 +5,7 @@ import image3 from "../assets/images/Products/p3.jpg";
 import image4 from "../assets/images/Products/p4.jpg";
 import image5 from "../assets/images/Products/p5.jpg";
 import image6 from "../assets/images/Products/p6.jpg";
-import about from "../assets/images/feature-image.jpg";
+import about from "../assets/images/products-heading.jpg";
 import tshirt from "../assets/images/tshirt.png";
 import hanger from "../assets/images/hanger.png";
 import handbag from "../assets/images/handbag.png";
@@ -16,7 +16,7 @@ import ring from "../assets/images/Products/ring.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import "../assets/css/templatemo-sixteen.css";
+import "../assets/css/style.css";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
