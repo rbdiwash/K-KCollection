@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/style.css";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   return (
     <header class="">
       <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
+        <div class="container align-items-center">
           <Link class="navbar-brand" to="/">
             <h2>
-              <em>K & K</em> Collection Edited
+              <em>K & K</em> Collection
             </h2>
+            {/* <img src={logo} alt="" style={{ height: "100px" }} /> */}
           </Link>
           <button
             class="navbar-toggler"

@@ -15,9 +15,12 @@ import earring2 from "../assets/images/Products/earring2.jpg";
 import ring from "../assets/images/Products/ring.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import sari5 from "../assets/images/Sari/s5.jpg";
 
 import "../assets/css/style.css";
 import { Link } from "react-router-dom";
+
+import { sari } from "../jsonFile";
 
 const Homepage = () => {
   const responsive = {
@@ -54,7 +57,7 @@ const Homepage = () => {
         <div className="banner-item-01">
           <div className="text-content text-center">
             <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h2 className="display-5">New Arrivals On Sale</h2>
           </div>
         </div>
         <div className="banner-item-02">
@@ -76,29 +79,29 @@ const Homepage = () => {
       <div className="section categories">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-lg-4 mb-4 mb-lg-0 text-center">
               <h4> OUR CATEGORIES </h4>
               <p>Find all items you want by selectin our featured categories</p>
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-2  mb-4 mb-lg-0">
               <div className="cat">
                 <img src={tshirt} alt="" className="catImg" />
                 <p>CLOTHING</p>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-2 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={sneakers} alt="" className="catImg" />
                 <p>SNEAKERS</p>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-2 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={handbag} alt="" className="catImg" />
                 <p>HANGBAGS</p>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-2 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={hanger} alt="" className="catImg" />
                 <p>HANGER</p>
@@ -127,6 +130,73 @@ const Homepage = () => {
         </div>
       </div>
 
+      <div className="sari-section">
+        <div className="section">
+          <div className="container">
+            <div className="row">
+              <div className="section-heading">
+                <h2>Latest Sari</h2>
+                <Link to="/shop">
+                  view all products <i className="fa fa-angle-right"></i>
+                </Link>
+              </div>
+              <div className="col-lg-6">
+                <div className="sari-image">
+                  <img
+                    src={sari5}
+                    alt=""
+                    className="sari-image-ind img-fluid pt-3"
+                    style={{
+                      width: "100%",
+                      height: "100vh",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <div className="overlay">
+                    <p className="text-black"> Rs. 2500</p>
+                    <Link to="/shop" className="filled-button mt-2">
+                      Buy
+                    </Link>{" "}
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="row">
+                  {sari.map((arg) => (
+                    <div className="col-lg-6">
+                      <div
+                        className="sari-image"
+                        style={{
+                          width: "100%",
+                          height: "50vh",
+                        }}
+                      >
+                        <img
+                          src={arg.image}
+                          alt={arg.name}
+                          className="img-fluid pt-3 sari-image-ind"
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "cover",
+                          }}
+                        />
+                        <div className="overlay">
+                          <p className="text-black"> Rs. {arg.Price}</p>
+                          <Link to="/shop" className="filled-button mt-2">
+                            Buy
+                          </Link>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="latest-products">
         <div className="container">
           <div className="row">
@@ -140,9 +210,9 @@ const Homepage = () => {
             </div>
             <div className="col-lg-3">
               <div className="product-item">
-                <a href="#">
+                <div className="product-image">
                   <img src={ring} alt="" />
-                </a>
+                </div>
                 <div className="down-content text-center">
                   <h4>Earring with butterflies.</h4>
                   <h6>$25.75</h6>
@@ -154,9 +224,9 @@ const Homepage = () => {
             </div>
             <div className="col-lg-3">
               <div className="product-item">
-                <a href="#">
+                <div className="product-image">
                   <img src={earring} alt="" />
-                </a>
+                </div>
                 <div className="down-content text-center">
                   <h4>Earring with butterflies.</h4>
                   <h6>$25.75</h6>
@@ -168,9 +238,9 @@ const Homepage = () => {
             </div>
             <div className="col-lg-3">
               <div className="product-item">
-                <a href="#">
+                <div className="product-image">
                   <img src={ring} alt="" />
-                </a>
+                </div>
                 <div className="down-content text-center">
                   <h4>Earring with butterflies.</h4>
                   <h6>Rs.125</h6>
@@ -182,9 +252,9 @@ const Homepage = () => {
             </div>
             <div className="col-lg-3">
               <div className="product-item">
-                <a href="#">
+                <div className="product-image">
                   <img src={earring2} alt="" className="img-fluid" />
-                </a>
+                </div>
                 <div className="down-content text-center">
                   <h4>Earring with butterflies.</h4>
                   <h6>$25.75</h6>
@@ -226,7 +296,6 @@ const Homepage = () => {
               autoPlay={true}
               infinite={true}
               autoPlaySpeed={2000}
-              showDots={true}
               transitionDuration={500}
               className="banner header-text"
             >
