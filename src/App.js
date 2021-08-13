@@ -9,7 +9,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Shop from "./Pages/Shop";
 import Footer from "./Components/footer";
-import SingleProduct from "./Pages/SingleProduct";
+import SingleProduct from "./Components/singleProduct";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
