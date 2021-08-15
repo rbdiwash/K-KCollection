@@ -1,7 +1,7 @@
-import sari7 from "../src/assets/images/Sari/s7.jpg";
-import sari2 from "../src/assets/images/Sari/s2.jpg";
-import sari6 from "../src/assets/images/Sari/s6.jpg";
-import sari4 from "../src/assets/images/Sari/s4.jpg";
+import sari7 from "../../src/assets/images/Sari/s7.jpg";
+import sari2 from "../../src/assets/images/Sari/s2.jpg";
+import sari6 from "../../src/assets/images/Sari/s6.jpg";
+import sari4 from "../../src/assets/images/Sari/s4.jpg";
 
 export const sari = [
   {

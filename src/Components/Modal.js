@@ -6,7 +6,7 @@ const Modal = ({ dataTarget }) => {
     <div
       className="modal fade"
       id={dataTarget}
-      tabindex="-1"
+      tabIndex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -46,8 +46,8 @@ const Modal = ({ dataTarget }) => {
             >
               Close
             </button>
-            <button type="button" className="btn btn-primary">
-              Save changes
+            <button type="button" className="filled-button">
+              Thank you
             </button>
           </div>
         </div>

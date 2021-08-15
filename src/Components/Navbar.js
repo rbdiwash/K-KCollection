@@ -5,17 +5,17 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   return (
-    <header class="">
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container align-items-center">
-          <Link class="navbar-brand" to="/">
+    <header className="">
+      <nav className="navbar navbar-expand-lg sticky-top">
+        <div className="container align-items-center">
+          <Link className="navbar-brand" to="/">
             <h2>
               <em>K & K</em> Collection
             </h2>
             {/* <img src={logo} alt="" style={{ height: "100px" }} /> */}
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
@@ -23,27 +23,27 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link " to="/shop">
+              <li className="nav-item">
+                <Link className="nav-link " to="/shop">
                   Our Products
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/about">
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
                   About Us
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
                   Contact Us
                 </Link>
               </li>

@@ -20,7 +20,7 @@ import sari5 from "../assets/images/Sari/s5.jpg";
 import "../assets/css/style.css";
 import { Link } from "react-router-dom";
 
-import { sari } from "../jsonFile";
+import { sari } from "../jsonFiles/jsonFile";
 
 const Homepage = () => {
   const responsive = {
@@ -273,7 +273,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="delivery text-center">
-                <i class="fa fa-scissors scissor" aria-hidden="true"></i>
+                <i className="fa fa-scissors scissor" aria-hidden="true"></i>
                 <h5>
                   {" "}
                   FREE DELIVERY + RETURN OVER Rs. 1000 (EXCLUDING HOMEWARE)|

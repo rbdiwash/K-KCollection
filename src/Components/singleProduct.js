@@ -47,13 +47,13 @@ const SingleProduct = () => {
                     style={{ color: "#f33f3f", fontSize: "24px" }}
                   ></i>
                 </div>
-                <p>
+                <span>
                   Color : Red, Blue
-                  <div className="d-flex justify-content-start align-items-center mt-3">
+                  <div className="d-flex justify-content-start align-items-center my-3">
                     <div className="red"></div>
                     <div className="blue"></div>
                   </div>
-                </p>
+                </span>
                 <p>Size: Medium, Large</p>
                 <h5>Price: Rs 1500</h5>
                 <button
@@ -62,10 +62,14 @@ const SingleProduct = () => {
                   data-toggle="modal"
                   data-target="#exampleModal"
                   onClick={() => {
-                    setOpenModal(!openModal);
+                    setOpenModal(true);
                   }}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", fontSize: "18px" }}
                 >
+                  <i
+                    className="fa fa-shopping-cart pr-2"
+                    aria-hidden="true"
+                  ></i>
                   Add to Bag
                 </button>
               </div>
@@ -87,7 +91,7 @@ const SingleProduct = () => {
             </div>
           </div>
         </div>
-        {openModal && <Modal dataTarget={"exampleModal"} />}
+        {openModal === true ? <Modal dataTarget={"exampleModal"} /> : null}
       </div>
     </section>
   );

@@ -655,6 +655,7 @@ header .navbar {
   width: 100%;
   overflow: hidden;
   height: 350px;
+  object-fit: cover;
 }
 
 .product-image {
@@ -940,6 +941,8 @@ footer .inner-content p a {
 
 .team-member img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
   overflow: hidden;
 }
 
@@ -1021,6 +1024,7 @@ footer .inner-content p a {
 .services .service-item .icon {
   background-color: #f7f7f7;
   padding: 40px;
+  transition: transform 0.7s ease-in-out;
 }
 
 .services .service-item .icon i {
@@ -1031,7 +1035,12 @@ footer .inner-content p a {
   line-height: 100px;
   background-color: #f33f3f;
   color: #fff;
-  font-size: 32px;
+  font-size: 36px;
+  transition: transform 0.7s ease-in-out;
+}
+.services .service-item .icon:hover i {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .services .service-item .down-content {
@@ -1184,6 +1193,7 @@ footer .inner-content p a {
 
 /* //footer*/
 .footer-main {
+  margin-top: 80px;
   padding: 70px 0px;
   background: #202020;
 }
@@ -1202,7 +1212,7 @@ footer .inner-content p a {
   height: 3px;
   width: 100%;
   position: absolute;
-  bottom: -3px;
+  bottom: -8px;
   left: 0px;
 }
 .footer-widget p {
@@ -1248,7 +1258,7 @@ footer .inner-content p a {
   height: 3px;
   width: 100%;
   position: absolute;
-  bottom: -3px;
+  bottom: -8px;
   left: 0px;
 }
 .footer-link ul li {
@@ -1303,7 +1313,7 @@ footer .inner-content p a {
   height: 3px;
   width: 100%;
   position: absolute;
-  bottom: -3px;
+  bottom: -8px;
   left: 0px;
 }
 .footer-link-contact ul li {
