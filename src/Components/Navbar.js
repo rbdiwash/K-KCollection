@@ -5,53 +5,76 @@ import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   return (
-    <header class="">
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container align-items-center">
-          <Link class="navbar-brand" to="/">
-            <h2>
-              <em>K & K</em> Collection
-            </h2>
-            {/* <img src={logo} alt="" style={{ height: "100px" }} /> */}
-          </Link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link " to="/shop">
-                  Our Products
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/about">
-                  About Us
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+    <div>
+      <header className="">
+        <nav className="navbar navbar-expand-lg sticky-top">
+          <div className="container align-items-center">
+            <Link className="navbar-brand" to="/">
+              <h2>
+                <em>K & K</em> Collection
+              </h2>
+              {/* <img src={logo} alt="" style={{ height: "100px" }} /> */}
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link "
+                    to="/shop"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Our Products
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/about"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/contact"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+      <div className="gap"></div>
+    </div>
   );
 };
 

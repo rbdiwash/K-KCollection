@@ -5,7 +5,7 @@ import image3 from "../assets/images/Products/p3.jpg";
 import image4 from "../assets/images/Products/p4.jpg";
 import image5 from "../assets/images/Products/p5.jpg";
 import image6 from "../assets/images/Products/p6.jpg";
-import about from "../assets/images/products-heading.jpg";
+import about from "../assets/images/about.jpg";
 import tshirt from "../assets/images/tshirt.png";
 import hanger from "../assets/images/hanger.png";
 import handbag from "../assets/images/handbag.png";
@@ -20,7 +20,7 @@ import sari5 from "../assets/images/Sari/s5.jpg";
 import "../assets/css/style.css";
 import { Link } from "react-router-dom";
 
-import { sari } from "../jsonFile";
+import { sari } from "../jsonFiles/jsonFile";
 
 const Homepage = () => {
   const responsive = {
@@ -83,25 +83,25 @@ const Homepage = () => {
               <h4> OUR CATEGORIES </h4>
               <p>Find all items you want by selectin our featured categories</p>
             </div>
-            <div className="col-lg-2  mb-4 mb-lg-0">
+            <div className="col-lg-2 col-md-3 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={tshirt} alt="" className="catImg" />
                 <p>CLOTHING</p>
               </div>
             </div>
-            <div className="col-lg-2 mb-4 mb-lg-0">
+            <div className="col-lg-2 col-md-3 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={sneakers} alt="" className="catImg" />
                 <p>SNEAKERS</p>
               </div>
             </div>
-            <div className="col-lg-2 mb-4 mb-lg-0">
+            <div className="col-lg-2 col-md-3 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={handbag} alt="" className="catImg" />
                 <p>HANGBAGS</p>
               </div>
             </div>
-            <div className="col-lg-2 mb-4 mb-lg-0">
+            <div className="col-lg-2 col-md-3 mb-4 mb-lg-0">
               <div className="cat">
                 <img src={hanger} alt="" className="catImg" />
                 <p>HANGER</p>
@@ -163,7 +163,7 @@ const Homepage = () => {
               <div className="col-lg-6">
                 <div className="row">
                   {sari.map((arg) => (
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6">
                       <div
                         className="sari-image"
                         style={{
@@ -208,7 +208,7 @@ const Homepage = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="product-item">
                 <div className="product-image">
                   <img src={ring} alt="" />
@@ -222,7 +222,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="product-item">
                 <div className="product-image">
                   <img src={earring} alt="" />
@@ -236,7 +236,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="product-item">
                 <div className="product-image">
                   <img src={ring} alt="" />
@@ -250,7 +250,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="product-item">
                 <div className="product-image">
                   <img src={earring2} alt="" className="img-fluid" />
@@ -273,7 +273,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="delivery text-center">
-                <i class="fa fa-scissors scissor" aria-hidden="true"></i>
+                <i className="fa fa-scissors scissor" aria-hidden="true"></i>
                 <h5>
                   {" "}
                   FREE DELIVERY + RETURN OVER Rs. 1000 (EXCLUDING HOMEWARE)|
@@ -348,41 +348,31 @@ const Homepage = () => {
               <div className="left-content">
                 <h4>Looking for the best products?</h4>
                 <p>
-                  <a
-                    rel="nofollow"
-                    href="https://templatemo.com/tm-546-sixteen-clothing"
-                    target="_parent"
-                  >
-                    This template
-                  </a>
-                  is free to use for your business websites. However, you have
-                  no permission to redistribute the downloadable ZIP file on any
-                  template collection website.
-                  <a rel="nofollow" href="https://templatemo.com/contact">
-                    Contact us
-                  </a>
-                  for more info.
+                  <span className="text"> K&K Collection </span> is new to this
+                  market and we want to serve the best products to the people
+                  around this globe.
+                  <br />
+                  <br />
+                  We care about customers, trending fashion and the need of the
+                  peoples. So we bring you the latest products available and
+                  trending in the market at very reasonable price.
                 </p>
+
+                <p>We have following products</p>
                 <ul className="featured-list">
                   <li>
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="#">Latest and quality Sari.</a>
                   </li>
                   <li>
-                    <a href="#">Consectetur an adipisicing elit</a>
+                    <a href="#">Beautiful and fashionable Lehenga.</a>
                   </li>
                   <li>
-                    <a href="#">It aquecorporis nulla aspernatur</a>
-                  </li>
-                  <li>
-                    <a href="#">Corporis, omnis doloremque</a>
-                  </li>
-                  <li>
-                    <a href="#">Non cum id reprehenderit</a>
+                    <a href="#">Every Boutique Items.</a>
                   </li>
                 </ul>
-                <a href="about.html" className="filled-button">
+                <Link to="/shop" className="filled-button">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-6">
